@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Assignment Question</title>
+  </head>
+  <body>
+    <h1 class="heading">Login Form</h1>
+    <form class="form">
+      <div class="detail">
+        <label for="username">Username : </label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+          required
+        />
+      </div>
+      <div class="detail">
+        <label for="password"> Password : </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+      </div>
+      <div class="detail">
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <label for="checkbox">Remember Me</label>
+      </div>
+      <div class="detail">
+        <input type="submit" value="Submit" id="submit" />
+        <button id="existing" type="submit" class="hide">
+          Login as existing user
+        </button>
+      </div>
+    </form>
+    <script src="./script.js"></script>
+  </body>
 </html>
